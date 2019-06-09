@@ -19,3 +19,37 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.login-form {
+  width: 600rpx;
+}
+.inputView {
+  font-size: .8rem;
+  display: flex;
+  background-color: #f7f7f7;
+  margin-bottom: .5rem;
+  align-items: center;
+  height: 2rem;
+}
+.loginBtn{
+  height: 2rem;
+  border-radius: 0rpx;
+  line-height: 2rem;
+  font-size: .8rem;
+  margin-top: 120rpx;
+}
+.loginBtn:before {
+  border-radius: 0rpx;
+}
+.loginLab{
+  margin: 0 20rpx;
+}
+.container{
+  padding-top: 0rpx;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30rpx;
+}
