@@ -4,10 +4,22 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
+    userInfo: {
+      username:'',
+      password:''
+    },
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+  usernameInput: function (e) {
+    this.setData({
+      username: e.detail.value
+    })
+  },
+  passwordInput: function (e) {
+    this.setData({
+      password: e.detail.value
+    })
   },
   //事件处理函数
   bindViewTap: function() {
@@ -44,11 +56,13 @@ Page({
     }
   },
   getUserInfo: function(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  login: function(e){
+
   }
 })
